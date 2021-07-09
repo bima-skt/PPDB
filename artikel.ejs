@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Blog</title>
+  </head>
+
+  <body>
+    <% include navbar/navbarArtikel %>
+
+    <div class="container post">
+      <div class="row">
+        <div class="col-md-6 post-title">
+          <h1>Medical Blog</h1>
+          <p class="author">
+            <strong>Artikel</strong>
+            <span class="text-muted"
+              ><script>
+                document.write(date);
+              </script></span
+            >
+          </p>
+        </div>
+        <div class="col-md-6 col-md-offset-0 post-body">
+          <p>
+            Berikut adalah list artikel blog yang telah dibuat:
+          </p>
+
+          <figure>
+            <a href="/artikel1"></a>
+            <a href="/artikel1"
+              ><strong>Pengertian Tumor</strong></a
+            >
+          </figure>
+          <br />
+
+          <figure>
+            <a href="/artikel2"
+              ></a>
+            <a href="/artikel2"><strong>Gejala Tumor</strong></a>
+          </figure>
+          <br />
+          <figure>
+            <a href="/artikel3"
+              ></a>
+            <a href="/artikel3"><strong>Cara Pengobatan</strong></a>
+          </figure>
+          
+          <br />
+        </div>
+      </div>
+    </div>
+    <% include footer/footer %>
+  </body>
+</html>
